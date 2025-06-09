@@ -1,0 +1,177 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #000000;
+}
+
+.cabecalho {
+    background-image: url(../imagens/cabcalho-background.png);
+
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+.container {
+
+    background-color: #000000;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.container .produtos {
+
+    color: #b8be9be7;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+.container .filtros {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.container .categorias-cartas,
+.container .preco-cartas {
+
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.container label {
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #91af0d9d;
+
+}
+
+.container .categorias-cartas select,
+.container .preco-cartas input {
+    padding: 16px 13px;
+    border-radius: 20px;
+    border: 2px solid #91af0d9d;
+    background-color: #000000;
+    color: #bfcf91;
+    height: 52px;
+}
+
+.container select:focus,
+.container input:focus,
+.container select:focus-visible,
+.container input:focus-visible {
+    outline: none;
+
+}
+
+.container .categoria {
+    appearance: none;
+    background: url(../imagens/seta-para-baixo.png) 97% center no-repeat;
+}
+
+.container .filtros .btn-filtrar {
+    border-radius: 20px;
+    background-color: #c0d8579d;
+    color: #fdfdfd;
+    padding: 16px 32px;
+    font-weight: 500;
+    align-self: end;
+    width: 177px;
+    height: 52px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s;
+
+}
+
+.container .filtros .btn-filtrar:hover {
+    background-color: #d5f893;
+    color: #493b15dc;
+}
+
+.container .cartas {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 32px;
+    border-radius: 20px;
+
+}
+
+.container .cartas .carta {
+
+    max-width: 365px;
+    background-image: url(../imagens/fundo.png);
+    background-color: #e45b00;
+    color: #d1dfc1;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgb(170, 162, 42);
+}
+
+.container .carta img {
+    width: 100%;
+    padding: 20px;
+}
+
+.container .carta .informacoes {
+    background-image: url(../imagens/papelVelho.png);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container .carta .informacoes .nome-personagem {
+    font-size: 24px;
+    font-weight: 700;
+    color: #361818;
+}
+
+.container .carta .informacoes .preco {
+    font-size: 24px;
+    font-weight: 700;
+    color: #d9dbda;
+}
+
+.container .carta .informacoes .btn-comprar {
+    color: #ffffff;
+    background-color: #91af0d9d;
+    padding: 16px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container .carta .informacoes .btn-comprar:hover {
+    background-color: #092b12;
+    color: #EDEDED;
+}
+
+.rodape {
+    background-image: url(../imagens/cabcalho-background.png);
+    display: flex;
+    justify-content: center;
+    color: #EDEDED;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.esconder {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
