@@ -161,11 +161,16 @@ body {
 
 .rodape {
     background-image: url(../imagens/cabcalho-background.png);
-    display: flex;
+    display: -webkit-flex;
     justify-content: center;
     color: #EDEDED;
     padding: 20px;
     margin-top: 60px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .esconder {
